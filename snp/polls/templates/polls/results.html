@@ -1,4 +1,9 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
 <fieldset>
+
     <legend>
 <h1>{{ question.question_text }}</h1>
     </legend>
@@ -11,4 +16,9 @@
 <form action="{% url 'polls:detail' question.id %}">
     <button>Проголосуем еще?</button>
     </form>
+
+    <form action="{% url 'polls:index' %}">
+        <button>Перейти к списку вопросов</button>
+    </form>
+
 </fieldset>

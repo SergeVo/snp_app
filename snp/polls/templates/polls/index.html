@@ -1,6 +1,11 @@
 {% load static %}
 
 <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+<fieldset>
+
+    <legend>
+        <h1>Список вопросов для голосования:</h1>
+            </legend>
 
 {% if latest_question_list %}
     <ul>
@@ -10,3 +15,4 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+</fieldset>
