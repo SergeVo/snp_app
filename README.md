@@ -1,2 +1,2 @@
 # snp_app
-Test Django app for SNP_Agensy
+Test Django app for SNP_Agenсy
