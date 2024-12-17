@@ -13,7 +13,7 @@
 
     .form-check-input:checked {
         background-color: white;
-        border-color:rgb(204, 86, 18); /* Цвет при выборе ответа */
+        border-color:rgb(15, 25, 208); /* Цвет при выборе ответа */
     }
 </style>
 
@@ -22,7 +22,7 @@
         {% csrf_token %}
         <fieldset>
             <legend class="mb-3">
-                <h1 class="text-primary">{{ question.question_text }}</h1>
+                <h1 class="text-dark">{{ question.question_text }}</h1>
             </legend>
             
             {% if error_message %}
