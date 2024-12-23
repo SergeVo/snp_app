@@ -2,13 +2,13 @@ from fabric import Connection, task
 
 
 # Конфигурация сервера
-REMOTE_HOST = "94.228.125.223"
+REMOTE_HOST = 
 REMOTE_USER = "root"
 REMOTE_DIR = "/var/www/snp_app"          # Базовая директория
 PROJECT_DIR = f"{REMOTE_DIR}/snp"   # Директория с manage.py
 GIT_REPO = "git@github.com:SergeVo/snp_app.git"
 PROJECT_NAME = "snp_app"
-REMOTE_PASSWORD = "fcf6XkyuA3-#HJ"
+REMOTE_PASSWORD = ""
 
 
 @task
